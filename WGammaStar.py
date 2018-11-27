@@ -57,6 +57,7 @@ class WGammaStar(Module):
         return dR
 
     def beginFile(self, inputFile, outputFile, inputTree, wrappedOutputTree):
+        self.initReaders(inputTree)
         self.out = wrappedOutputTree
         self.newbranchesF = [
         'Gen_ZGstar_mu1_pt',  
